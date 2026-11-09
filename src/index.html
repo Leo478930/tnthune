@@ -1,0 +1,127 @@
+<title>T.N.Thune</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titan+One&family=Barlow+Condensed:wght@500;600;700&display=swap">
+<style>/*__CSS__*/</style>
+
+<canvas id="bg" aria-hidden="true"></canvas>
+<div id="flicker" aria-hidden="true"></div>
+
+<div id="viewport"><div id="fit">
+<main id="stage" class="landscape" aria-label="Machine à sous T.N.Thune">
+  <div id="logoBox"><canvas id="logo" width="1640" height="200" role="img" aria-label="T.N.Thune"></canvas><div class="badge bl"><small>MAX WIN</small><b>25 000×</b></div><div class="badge br"><small>RTP</small><b>96 %</b></div></div>
+
+  <div id="hud" hidden>
+    <div class="hud-cell" id="hudCount"><span class="lbl" id="hudCountLbl">FREE SPINS</span><b id="hudCountVal">1 / 12</b></div>
+    <div class="hud-mult" id="hudMult"><span class="lbl">MULTI</span><b id="hudMultVal">×1</b></div>
+    <div class="hud-cell" id="hudTotal"><span class="lbl">GAIN DU BONUS</span><b id="hudTotalVal">0,00 €</b></div>
+  </div>
+
+  <section id="jackpots" aria-label="Jackpots">
+    <div class="jp jp-super" id="jp-super"><span>SUPER JACKPOT</span><b id="jpv-super"></b></div>
+    <div class="jp jp-grand" id="jp-grand"><span>GRAND</span><b id="jpv-grand"></b></div>
+    <div class="jp jp-major" id="jp-major"><span>MAJOR</span><b id="jpv-major"></b></div>
+    <div class="jp jp-minor" id="jp-minor"><span>MINOR</span><b id="jpv-minor"></b></div>
+    <div class="jp jp-mini" id="jp-mini"><span>MINI</span><b id="jpv-mini"></b></div>
+  </section>
+
+  <div id="reelbox"><canvas id="reels" aria-label="Rouleaux"></canvas></div>
+
+  <aside id="side">
+    <button id="buyBtn" type="button"><span class="buy-t">ACHETER<br>UN BONUS</span><span class="buy-s" id="buyFrom">dès 100,00 €</span></button>
+    <dl id="report">
+      <div><dt>Spins</dt><dd id="rSpins">0</dd></div>
+      <div><dt>Sans bonus depuis</dt><dd id="rDry">0</dd></div>
+      <div><dt>Meilleur gain</dt><dd id="rBest">0,00 €</dd></div>
+      <div><dt>RTP de ta session</dt><dd id="rRtp">–</dd></div>
+    </dl>
+  </aside>
+
+  <footer id="bar">
+    <div class="meter" id="balBox"><span class="ml">SOLDE</span><output id="balance">2 000,00 €</output></div>
+    <div class="meter" id="betBox"><span class="ml">MISE</span><button id="betMax" class="maxbet" type="button" aria-label="Mise maximale">MAX</button>
+      <div class="betrow"><button id="betDown" type="button" aria-label="Baisser la mise">−</button><output id="bet">2,00 €</output><button id="betUp" type="button" aria-label="Monter la mise">+</button></div>
+    </div>
+    <div class="meter" id="winBox"><span class="ml">GAIN</span><output id="win">0,00 €</output>
+      <button id="gambleBtn" type="button" hidden>QUITTE OU DOUBLE</button>
+    </div>
+    <button id="autoBtn" class="roundish" type="button"><span>AUTO</span><small id="autoLeft"></small></button>
+    <button id="spinBtn" type="button" aria-label="Lancer les rouleaux"><span id="spinTxt">SPIN</span></button>
+    <button id="turboBtn" class="roundish" type="button" aria-pressed="false"><span>TURBO</span><small id="turboLvl">off</small></button>
+    <div id="tools">
+      <button id="infoBtn" type="button" aria-label="Règles, gains et statistiques"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.4"/><rect x="10.7" y="10.4" width="2.6" height="7.4" rx="1.2" fill="currentColor"/><circle cx="12" cy="7.2" r="1.7" fill="currentColor"/></svg></button>
+      <button id="soundBtn" type="button" aria-label="Couper le son"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M4 9.5v5h3.6L13 19V5L7.6 9.5H4z" fill="currentColor"/><path id="soundWave" d="M16 8.5a5 5 0 0 1 0 7M18.6 6a8.6 8.6 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    </div>
+  </footer>
+  <p id="legal">Jeu de simulation · argent fictif · aucun gain réel</p>
+</main>
+</div></div>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="tap" hidden></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<div class="modal" id="mBuy" hidden role="dialog" aria-modal="true" aria-labelledby="mBuyT">
+  <div class="panel wide">
+    <header><h2 id="mBuyT">Acheter un bonus</h2><button class="x" data-close type="button" aria-label="Fermer">×</button></header>
+    <div class="buybet">Mise <button id="bBetDown" type="button" aria-label="Baisser la mise">−</button><b id="bBet"></b><button id="bBetUp" type="button" aria-label="Monter la mise">+</button><span class="sep"></span>Solde <b id="bBal"></b></div>
+    <div id="offers"></div>
+    <p class="note">Chaque prix est calé pour rendre environ 96 % sur le long terme. La plupart des achats rapportent moins que leur prix, quelques-uns rapportent énormément.</p>
+  </div>
+</div>
+
+<div class="modal" id="mAuto" hidden role="dialog" aria-modal="true" aria-labelledby="mAutoT">
+  <div class="panel">
+    <header><h2 id="mAutoT">Mode auto</h2><button class="x" data-close type="button" aria-label="Fermer">×</button></header>
+    <h3>Nombre de spins</h3><div class="chips" id="aSpins"></div>
+    <h3>Arrêter si je perds plus de</h3><div class="chips" id="aLoss"></div>
+    <h3>Arrêter sur un gain d'au moins</h3><div class="chips" id="aWin"></div>
+    <label class="check"><input type="checkbox" id="aBonus"> Arrêter dès qu'un bonus tombe</label>
+    <button class="cta" id="aGo" type="button">LANCER</button>
+  </div>
+</div>
+
+<div class="modal" id="mInfo" hidden role="dialog" aria-modal="true" aria-labelledby="mInfoT">
+  <div class="panel wide tall">
+    <header><h2 id="mInfoT">Règles et statistiques</h2><button class="x" data-close type="button" aria-label="Fermer">×</button></header>
+    <nav class="tabs" role="tablist">
+      <button type="button" class="on" data-tab="tPay" role="tab">Gains</button>
+      <button type="button" data-tab="tBonus" role="tab">Bonus</button>
+      <button type="button" data-tab="tMath" role="tab">Chiffres</button>
+      <button type="button" data-tab="tFx" role="tab">Réglages</button>
+    </nav>
+    <div class="tabbody" id="tPay"></div>
+    <div class="tabbody" id="tBonus" hidden></div>
+    <div class="tabbody" id="tMath" hidden></div>
+    <div class="tabbody" id="tFx" hidden></div>
+  </div>
+</div>
+
+<div class="modal" id="mGamble" hidden role="dialog" aria-modal="true" aria-labelledby="mGambleT">
+  <div class="panel">
+    <header><h2 id="mGambleT">Quitte ou double</h2></header>
+    <p class="gam-lead">Une caisse saute et double ton gain. L'autre fait pschitt et tu perds tout.</p>
+    <div class="gam-row"><div><small>En jeu</small><b id="gStake"></b></div><div><small>Si ça saute</small><b id="gNext"></b></div></div>
+    <div class="crates"><button type="button" class="crate" id="gL" aria-label="Caisse de gauche"><canvas width="240" height="240"></canvas></button><button type="button" class="crate" id="gR" aria-label="Caisse de droite"><canvas width="240" height="240"></canvas></button></div>
+    <p id="gMsg" role="status"></p>
+    <button class="cta" id="gTake" type="button">ENCAISSER</button>
+  </div>
+</div>
+
+<div class="modal" id="mBroke" hidden role="dialog" aria-modal="true" aria-labelledby="mBrokeT">
+  <div class="panel">
+    <header><h2 id="mBrokeT">Compte à sec</h2></header>
+    <p class="gam-lead">Plus assez pour cette mise. Baisse ta mise ou repars avec un compte neuf en argent fictif.</p>
+    <button class="cta" id="refill" type="button">REPARTIR AVEC 2 000 €</button>
+    <button class="ghost" data-close type="button">Baisser ma mise</button>
+  </div>
+</div>
+
+<div id="boot"><span>Allumage de la mèche…</span></div>
+
+<script>/*__ENGINE__*/</script>
+<script>/*__ART__*/</script>
+<script>/*__AUDIO__*/</script>
+<script>/*__FX__*/</script>
+<script>/*__GAME__*/</script>

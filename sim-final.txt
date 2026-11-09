@@ -1,0 +1,49 @@
+
+=== JEU DE BASE (60 000 000 spins, 24.8 s) ===
+RTP total           96.11 %
+  lignes (hors feature) 47.65 %
+  déflagration      6.54 %  freq 1/155
+  scatter           0.80 %
+  roue              27.11 %  freq 1/292  moy 79.10 x
+  hold (pépites)    14.01 %  freq 1/355  moy 49.68 x
+Hit frequency       28.32 %  (1 sur 3.53 )
+Ecart-type par spin 13.81 x
+Plus gros gain      21316 x   Max win atteint: 0
+Détonateurs 3/4/5   1/303 1/7 784 1/535 714
+Pépites >= 3:1/10  4:1/31  5:1/95  6:1/354
+Jackpots            mini 1/877 | minor 1/3 119 | major 1/22 642 | grand 1/221 402 | super 1/2 857 143 | plein écran 14
+Gain >=             1x:1/6  5x:1/36  15x:1/119  40x:1/271  100x:1/1 053  500x:1/20 654  1000x:1/59 880  5000x:1/2 000 000  10000x:1/2 857 143  25000x:jamais
+
+=== FEATURES ===
+FREE SPINS         moy    97.88x  sd   179.83  max  19377x  prix  100x -> RTP 97.88%  <prix/2: 45.0%  full:0  cap:0
+     >= 20x:1/1 50x:1/2 100x:1/4 500x:1/55 1000x:1/182 5000x:1/12 121 10000x:1/133 333
+SUPER FREE SPINS   moy   160.08x  sd   254.87  max  14969x  prix  200x -> RTP 80.04%  <prix/2: 49.2%  full:0  cap:0
+     >= 20x:1/1 50x:1/1 100x:1/2 500x:1/25 1000x:1/90 5000x:1/3 604 10000x:1/57 143
+MEGA FREE SPINS    moy   412.93x  sd   602.22  max  25000x  prix  500x -> RTP 82.59%  <prix/2: 45.8%  full:0  cap:5
+     >= 20x:1/1 50x:1/1 100x:1/1 500x:1/4 1000x:1/16 5000x:1/372 10000x:1/2 260
+HOLD & BLAST       moy    47.67x  sd   100.25  max  10283x  prix   60x -> RTP 79.45%  <prix/2: 31.5%  full:19  cap:0
+     >= 20x:1/1 50x:1/3 100x:1/25 500x:1/870 1000x:1/897 5000x:1/21 053 10000x:1/21 053
+SUPER HOLD         moy   110.80x  sd   173.64  max  10482x  prix  150x -> RTP 73.87%  <prix/2: 36.8%  full:61  cap:0
+     >= 20x:1/1 50x:1/1 100x:1/3 500x:1/218 1000x:1/345 5000x:1/6 557 10000x:1/6 557
+MEGA HOLD          moy   249.96x  sd   328.57  max  12399x  prix  400x -> RTP 62.49%  <prix/2: 52.0%  full:235  cap:0
+     >= 20x:1/1 50x:1/1 100x:1/1 500x:1/27 1000x:1/95 5000x:1/1 702 10000x:1/1 702
+ROUE GALERIE −1    moy    76.27x  sd   158.22  max  14932x  prix  100x -> RTP 76.27%  <prix/2: 57.8%  full:0  cap:0
+     >= 20x:1/1 50x:1/2 100x:1/5 500x:1/85 1000x:1/262 5000x:1/12 903 10000x:1/36 364
+ROUE GALERIE −2    moy   136.69x  sd   248.16  max  16699x  prix  300x -> RTP 45.56%  <prix/2: 74.6%  full:0  cap:0
+     >= 20x:1/1 50x:1/1 100x:1/2 500x:1/40 1000x:1/127 5000x:1/3 053 10000x:1/5 128
+ROUE GALERIE −3    moy   304.72x  sd   551.89  max  25000x  prix  800x -> RTP 38.09%  <prix/2: 83.8%  full:0  cap:2
+     >= 20x:1/1 50x:1/1 100x:1/1 500x:1/12 1000x:1/33 5000x:1/417 10000x:1/565
+
+=== OFFRES ===
+BUY HOLD & BLAST   moy    47.91x  sd   107.07  max  13046x  prix   50x -> RTP 95.83%  <prix/2: 19.6%  full:0  cap:0
+     >= 20x:1/1 50x:1/3 100x:1/25 500x:1/885 1000x:1/920 5000x:1/20 000 10000x:1/20 000
+BUY LA ROUE        moy    76.80x  sd   167.21  max  15015x  prix   80x -> RTP 95.99%  <prix/2: 48.5%  full:0  cap:0
+     >= 20x:1/1 50x:1/2 100x:1/5 500x:1/86 1000x:1/262 5000x:1/10 000 10000x:1/22 222
+BUY FREE SPINS     moy    97.61x  sd   178.63  max  12626x  prix  100x -> RTP 97.61%  <prix/2: 45.1%  full:0  cap:0
+     >= 20x:1/1 50x:1/2 100x:1/4 500x:1/55 1000x:1/179 5000x:1/10 811 10000x:1/133 333
+BUY MEGA HOLD      moy   251.30x  sd   330.41  max  13321x  prix  260x -> RTP 96.65%  <prix/2: 13.1%  full:0  cap:0
+     >= 20x:1/1 50x:1/1 100x:1/1 500x:1/26 1000x:1/93 5000x:1/1 905 10000x:1/1 905
+BUY SUPER ROUE     moy   306.39x  sd   564.89  max  24958x  prix  320x -> RTP 95.75%  <prix/2: 35.4%  full:0  cap:0
+     >= 20x:1/1 50x:1/1 100x:1/1 500x:1/12 1000x:1/33 5000x:1/400 10000x:1/535
+BUY MEGA FREE SPINS moy   410.05x  sd   577.65  max  25000x  prix  430x -> RTP 95.36%  <prix/2: 38.8%  full:0  cap:1
+     >= 20x:1/1 50x:1/1 100x:1/1 500x:1/4 1000x:1/16 5000x:1/389 10000x:1/2 941
